@@ -11,9 +11,6 @@ ADD . /microservice
 
 RUN ls
 
-# Make port 3000 available to the world outs ide this container
-EXPOSE 3000
-
 RUN chmod +x /microservice/entrypoint.sh
 ENTRYPOINT ["/microservice/entrypoint.sh"]
 
